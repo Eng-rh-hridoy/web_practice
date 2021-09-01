@@ -1,0 +1,81 @@
+body{
+    background-color: antiquewhite;
+    font-size: 2.5em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.cal-layout{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas: 
+    "in in in in"
+    "c c slash equal"
+    "fas sec thr str"
+    "for fiv six min"
+    "sev eig nin pul"
+    "poi zer zer pul";
+}
+button{
+    font-size: 23px;
+}
+#display{
+    grid-area: in;
+    font-size: 23px;
+    text-align: right;
+    height: 60px;
+}
+.clear{
+    grid-area: c;
+}
+.slash{
+    grid-area: slash;
+}
+.poi{
+    grid-area: poi;
+}
+.fas{
+    grid-area: fas;
+}
+.sec{
+    grid-area: sec;
+}
+.thr{
+    grid-area: thr;
+}
+.str{
+    grid-area: str;
+}
+.for{
+    grid-area: for;
+}
+.fiv{
+    grid-area: fiv;
+}
+.six{
+    grid-area: six;
+}
+.min{
+    grid-area: min;
+}
+.sev{
+    grid-area: sev;
+}
+.eig{
+    grid-area: eig;
+}
+.pul{
+    grid-area: pul;
+}
+.nin{
+    grid-area: nin;
+}
+.zer{
+    grid-area: zer;
+}
+#equal{
+    grid-area: equal;
+}

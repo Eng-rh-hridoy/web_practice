@@ -1,0 +1,21 @@
+.weeks{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px;
+    grid-gap: 3px;
+    justify-content: center;
+}
+.dates{
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 3px;
+    justify-content: center;
+}
+.weeks div, .dates div{
+    background-color: grey;
+    text-align: center;
+}
+.weeks .light, .dates .light{
+    background-color: lightgray;
+}
