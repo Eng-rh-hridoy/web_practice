@@ -26,9 +26,9 @@ const highLevel = {
 }
 // use a method from other object
 //bind
-// const bestFriendChargeBill =  normalPerson.chargeBill.bind(bestFriend);
-// bestFriendChargeBill(5000);
-// console.log(bestFriend.salary);
+const bestFriendChargeBill =  normalPerson.chargeBill.bind(bestFriend);
+bestFriendChargeBill(5000);
+console.log(bestFriend.salary);
 
 // call
 normalPerson.chargeBill.call(bestFriend, 7000);
